@@ -8,21 +8,21 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
 
-  title = 'bootcamp';
+  // title = 'bootcamp';
 
-  texto = "texto del input";
+  // texto = "texto del input";
 
-  onChange({target}: any) {
-    this.texto = target.value;
-    console.log('ha cambiado', target.value);
-  }
+  // onChange({target}: any) {
+  //   this.texto = target.value;
+  //   console.log('ha cambiado', target.value);
+  // }
 
-  onDisable(mensaje: string) {
-    console.log(mensaje);
-  }
+  // onDisable(mensaje: string) {
+  //   console.log(mensaje);
+  // }
 
-  onClick(boton:string, numero: number) {
-    console.log(`se ha pulsado el boton ${boton} ${numero} veces`);
-  }
+  // onClick(boton:string, numero: number) {
+  //   console.log(`se ha pulsado el boton ${boton} ${numero} veces`);
+  // }
 
 }

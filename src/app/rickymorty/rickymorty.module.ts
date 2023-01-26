@@ -6,6 +6,7 @@ import { CharacterListComponent } from './components/character-list/character-li
 import { CharacterComponent } from './components/character/character.component';
 import { CharacterNumberComponent } from './components/character-number/character-number.component';
 
+import {MatTableModule} from '@angular/material/table';
 
 
 @NgModule({
@@ -18,6 +19,7 @@ import { CharacterNumberComponent } from './components/character-number/characte
   imports: [
     CommonModule,
     HttpClientModule,
+    MatTableModule,
   ],
   exports: [
     RickymortyComponent

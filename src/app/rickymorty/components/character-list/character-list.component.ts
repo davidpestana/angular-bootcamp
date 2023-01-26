@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Observable } from 'rxjs';
+import { Observable, of } from 'rxjs';
 import { CharacterService } from '../../services/character.service';
 
 @Component({
@@ -9,7 +9,8 @@ import { CharacterService } from '../../services/character.service';
 })
 export class CharacterListComponent {
 
-  characters$?: Observable<any[]>;
+  characters$: Observable<any[]> = of([]);
+  displayedColumns: string[] = ['id', 'name'];
 
   constructor(
     private characterService: CharacterService

@@ -31,7 +31,6 @@ export class CharacterService {
   }
 
   load() {
-    console.log(this.characters$.value)
       this.http.get(`https://rickandmortyapi.com/api/character/?page=${this.page}`)
       .pipe(map(({info, results}:any) => results))
       .subscribe(results => this.characters$.next(

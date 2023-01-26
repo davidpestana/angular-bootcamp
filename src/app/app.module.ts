@@ -11,6 +11,7 @@ import { BindingPipe } from '@angular/compiler';
 import { BindgingExample2Component } from './bindging-example2/bindging-example2.component';
 import { RickymortyComponent } from './rickymorty/rickymorty.component';
 import { RickymortyModule } from './rickymorty/rickymorty.module';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { RickymortyModule } from './rickymorty/rickymorty.module';
     RickymortyModule,
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
