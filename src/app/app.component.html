@@ -1,0 +1,24 @@
+ {{ title }}
+<app-rickymorty></app-rickymorty>
+
+ <p>Serie 3: {{title ? title : 'No hay serie 3'}}</p>
+
+<app-button [title]="title" (disabled)="onDisable($event)" (clicked)="onClick('boton1',$event)"></app-button>
+
+<app-button title="boton2" (clicked)="onClick('boton2',$event)"></app-button>
+
+<app-button title="boton3" />
+
+<app-bindging-example />
+
+<app-bindging-example2 />
+
+<app-video></app-video>
+
+<!-- <input type="text" [value]="texto" (change)="onChange($event)" /> -->
+
+<input type="text" [(ngModel)]="texto">
+
+{{ texto }}
+
+<router-outlet></router-outlet>

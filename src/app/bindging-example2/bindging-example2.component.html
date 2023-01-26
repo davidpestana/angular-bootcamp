@@ -1,0 +1,11 @@
+<select #selectTheme [(ngModel)]="temaSeleccionado">
+  <option value="{ darkTheme: true }">Tema oscuro</option>
+  <option value="{ lightTheme: true }">Tema claro</option>
+  <option value="{ highContrastTheme: true }">Tema de alto contraste</option>
+</select>
+
+<button type="button" (click)="show(selectTheme)">Mostrar valor del input</button>
+
+<div [ngClass]="temaSeleccionado">
+  <p>Un texto de ejemplo</p>
+</div>

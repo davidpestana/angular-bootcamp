@@ -1,0 +1,7 @@
+<p>Bienvenidos a Ricky y Morty</p>
+
+<app-character-number />
+<button (click)="check()">visible</button>
+<button (click)="loadMore()">load more</button>
+<button (click)="clear()">clear</button>
+<app-character-list *ngIf="visible"></app-character-list>

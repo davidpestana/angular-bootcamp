@@ -1,0 +1,5 @@
+<video src="assets/video.mp4" width="200" #videoRef></video>
+
+<button type="button" (click)="videoRef.play()">Play</button>
+<button type="button" (click)="videoRef.pause()">Pause</button>
+<input type="range" min="0" max="100" (input)="cambiarVolumen($event, videoRef)">
